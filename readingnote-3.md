@@ -1,17 +1,15 @@
 # Chapter 3. Sensing and Separation
 
-* Dependencies among classes can make it very difficult to get particular clusters of objects under test.
-* One of the big problems that we confront in legacy code work is dependency.
-* There are two reasons to break dependencies when we want to get tests in place:
-    1. Sensing: When we can't access values our code computes.
-    1. Separation: When we can't even get a piece of code into a test harness to run.
+## Points:
 
-### Fakes Distilled
-* In OO(Object-Oriented) languages, they are often implemented as simple classes.
-* In non-OO languages, we can implement a fake by defining an alternative function, one which records values in some golbal data structure that we can access in tests.(Chapter 19, My Project is Not Object-Oriented. How Do I Make Safe Changes?)
-
-### Mock Objects
-* A more advanced type of fake which performs assertions internally.
+1. Dependencies among classes can make it very difficult to get particular clusters of objects under test.
+1. One of the big problems that we confront in legacy code work is dependency.
+1. There are two reasons to break dependencies when we want to get tests in place:
+    1. Sensing(検出): When we can't access values our code computes.
+    1. Separation(分離): When we can't even get a piece of code into a test harness to run.
+1. In OO(Object-Oriented) languages, fakes are often implemented as simple classes.
+1. In non-OO languages, we can implement a fake by defining an alternative function, one which records values in some golbal data structure that we can access in tests.(_Chapter 19_, My Project is Not Object-Oriented. How Do I Make Safe Changes?)
+1. Mock Objects: A more advanced type of fake which performs assertions internally.
 
 ## Example(for Sensing): A Sale System
 
@@ -114,15 +112,12 @@ public class SaleTest extends TestCase
 }
 ```
 
-### The Two Sides of a Fake Object
-1. One side for the production code.
-1. One side for the test code.
-
-### Fake Objects Support Real Tests
-* When we write tests, we have to divide and conquer.
-* When we write tests for individual units, we end up with small, well-understood pieces.
-
-
+* The Two Sides of a Fake Object:
+    1. One side for the production code.
+    1. One side for the test code.
+* About writing tests:
+    * When we write tests, we have to divide and conquer.
+    * When we write tests for individual units, we end up with small, well-understood pieces.
 
 # 分かってないこと
 
