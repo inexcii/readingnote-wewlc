@@ -3,7 +3,7 @@
 ## Points:
 1. Two reasons for systems that are littered with library calls are harder to deal with than home-grown systems:
     1. It is often hard to see how to make the structure better because all you can see are the API calls and anything that would've been a hint at a design just isn't there.
-    1. We don't own the API.( If we did, we could rename interfaces, classes, and methods to make things clearer for us, or add methods to classes to make them available to different parts of the code.
+    1. We don't own the API.(If we did, we could rename interfaces, classes, and methods to make things clearer for us, or add methods to classes to make them available to different parts of the code.)
 1. Nearly every system has some core logic that can be peeled away from API calls.
 1. When we have a system that looks like it is nothing but API calls, it helps to imagine that it is just one big object and then apply the responsibility-separation heuristics in *Chapter 20*(This Class Is Too Big and I Don't Want It to Get Any Bigger).
 1. There are essentially two approaches for refactoring this kind of class:
