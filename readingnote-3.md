@@ -47,12 +47,12 @@ public class Sale
     this.artR56Display = display;
   }
 
-  public void scan(String barcode) { // Code of display has been refactored by artR56Display }
+  public void scan(String barcode) { // Code of display has been refactored by artR56Display. }
 }
 
 public class ArtR56Display
 {
-  public showLine(String line) { // Code of display }
+  public showLine(String line) { // Code of display. }
 }
 ```
 
@@ -67,7 +67,7 @@ public class Sale
     this.display = display;
   }
 
-  public void scan(String barcode) { // Code of display has been refactored by display }
+  public void scan(String barcode) { // Code of display has been refactored by display. }
 }
 
 public interface Display
@@ -77,7 +77,7 @@ public interface Display
 
 public class ArtR56Display implements Display
 {
-  public showLine(String line) { // Code of display }
+  public showLine(String line) { // Code of display. }
 }
 
 ```
@@ -130,9 +130,3 @@ public class SaleTest extends TestCase
 
 # 困ってること
 * 実践したいのに、実践コードがあまりない
-
-
-# Chapter 15. My Application Is All API Calls
-
-
-
