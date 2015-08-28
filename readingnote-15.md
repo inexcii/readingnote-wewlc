@@ -24,7 +24,7 @@
 
 ## Example: Mailing List Server
 
-* Use Responsibility-Based Extraction way
+* Use _Responsibility-Based Extraction_ way
 
 * Characteristics of the code
     * Before restructure:
@@ -54,3 +54,5 @@
 1. "Skin and Wrap the API"方法は結局分からなかったです。（14章に参照しに行ってもあまり書いてないみたいです）
 
 # 困ってること
+
+* 実践したいのに、実践コードがあまりない
