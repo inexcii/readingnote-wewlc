@@ -109,7 +109,7 @@
 
 ```
   public void testValueForGallonsMoreThanCorpMin() {
-    StandardLease lease = new StandardLease(Lease.MONTHLY);
+    ZonedHawthorneLease lease = new ZonedHawthorneLease(Lease.MONTHLY);
     FuelShare share = new FuelShare(lease);
 
     share.addReading(FuelShare.CORP_MIN + 1, new Date());
